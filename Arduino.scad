@@ -1,3 +1,5 @@
+// Arduino nano, version 3 (atmega328)
+
 $fn = 300;
 
 arduino_nano ();
