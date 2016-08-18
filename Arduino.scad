@@ -1,5 +1,3 @@
-// Arduino nano, version 3 (atmega328)
-
 $fn = 300;
 
 arduino_nano ();
@@ -48,12 +46,12 @@ module headers_arduino_nano () {
         color ([0.8, 0.8, 0.8, 1]) {
             translate ([1.651, i + 3.748, -8.5]) {
                 rotate ([0, 0, 45]) {
-                    cylinder (h = 10, d = 1.5, $fn = 4);
+                    cylinder (h = 10, d = 0.63 * sqrt (2), $fn = 4);
                 }
             }
             translate ([16.891, i + 3.748, -8.5]) {
                 rotate ([0, 0, 45]) {
-                    cylinder (h = 10, d = 1.5, $fn = 4);
+                    cylinder (h = 10, d = 0.63 * sqrt (2), $fn = 4);
                 }
             }
         }
