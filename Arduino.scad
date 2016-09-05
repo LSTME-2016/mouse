@@ -44,24 +44,24 @@ module headers_arduino_nano () {
     
     for (i = [0: 2.54: 35.56]) {
         color ([0.8, 0.8, 0.8, 1]) {
-            translate ([1.651, i + 3.748, -8.5]) {
+            translate ([1.651, i + 3.748, -1.5]) {
                 rotate ([0, 0, 45]) {
                     cylinder (h = 10, d = 0.63 * sqrt (2), $fn = 4);
                 }
             }
-            translate ([16.891, i + 3.748, -8.5]) {
+            translate ([16.891, i + 3.748, -1.5]) {
                 rotate ([0, 0, 45]) {
                     cylinder (h = 10, d = 0.63 * sqrt (2), $fn = 4);
                 }
             }
         }
         color ([0.1, 0.1, 0.1, 1]) {
-            translate ([1.651, i + 3.748, -2]) {
+            translate ([1.651, i + 3.748, 1]) {
                 rotate ([0, 0, 45]) {
                     cylinder (h = 2, d = 2.7, $fn = 4);
                 }
             }
-            translate ([16.891, i + 3.748, -2]) {
+            translate ([16.891, i + 3.748, 1]) {
                 rotate ([0, 0, 45]) {
                     cylinder (h = 2, d = 2.7, $fn = 4);
                 }
@@ -69,10 +69,10 @@ module headers_arduino_nano () {
         }
     }
     color ([0.1, 0.1, 0.1, 1]) {
-        translate ([1.651 - width_of_header / 2, 3.748, -1.8]) {
+        translate ([1.651 - width_of_header / 2, 3.748, 1]) {
             cube ([width_of_header, 35.56, 1.8]);
         }
-        translate ([16.891 - width_of_header / 2, 3.748, -1.8]) {
+        translate ([16.891 - width_of_header / 2, 3.748, 1]) {
             cube ([width_of_header, 35.56, 1.8]);
         }
     }

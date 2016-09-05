@@ -14,17 +14,16 @@ wheel (wheel_diameter);
 module wheel (wheel_diameter) {
     color ([0.1, 0.1, 0.1, 1]) {
         difference () {
-            cylinder (h = 4, d1 = wheel_diameter,
-                      d2 = wheel_diameter * 14.5 / 14);
+            cylinder (h = 4, d = wheel_diameter);
             translate ([0, 0, -0.5]) {
                 cylinder (h = 5, d = 7.7);
                 hull () {
-                    cylinder (h = 2.7, d = 7.7);
+                    cylinder (h = 3, d = 7.7);
                     translate ([0, 14.3 - dh / 2, 0]) {
-                        cylinder (h = 2.7, d = dh);
+                        cylinder (h = 3, d = dh);
                     }
                     translate ([0, -14.3 + dh / 2, 0]) {
-                        cylinder (h = 2.7, d = dh);
+                        cylinder (h = 3, d = dh);
                     }
                 }
             }
@@ -49,13 +48,13 @@ module wheel (wheel_diameter) {
                     }
                 }
             }
-            translate ([0, 0, 2]) {
+            /*translate ([0, 0, 2]) {
                 rotate_extrude () {
-                    translate ([wheel_diameter / 2 + 0.25, 0]) {
+                    translate ([wheel_diameter / 2 + 0.5, 0]) {
                         circle (d = 2);
                     }
                 }
-            }
+            }*/
         }
     }
 }
