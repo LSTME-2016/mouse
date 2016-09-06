@@ -1,0 +1,1 @@
+﻿tento adresár obsahuje programy, ktoré sme napísali počas zamestnania Programovanie na LSTME.
